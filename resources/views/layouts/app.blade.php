@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Surfside Media</title>
+    <title>Trending Shop</title>
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,7 +11,7 @@
     <meta property="og:type" content="">
     <meta property="og:url" content="">
     <meta property="og:image" content="">
-    <link rel="shortcut icon" type="image/x-icon" href="{{ asset('assets/imgs/theme/favicon.ico') }}">
+    <link rel="shortcut icon" type="image/x-icon" href="{{ asset('assets/imgs/theme/favicon-32x32.ico') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/main.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/custom.css') }}">
     @livewireStyles
@@ -81,7 +81,7 @@
                 <div class="container">
                     <div class="header-wrap">
                         <div class="logo logo-width-1">
-                            <a href="index.html"><img src="assets/imgs/logo/trending_logo.png" alt="logo"></a>
+                            <a href="index.html"><img src="{{asset('assets/imgs/logo/trending_logo.png')}}" alt="logo"></a>
                         </div>
                         <div class="header-right">
                             <div class="search-style-1">
@@ -109,7 +109,7 @@
                 <div class="container">
                     <div class="header-wrap header-space-between position-relative">
                         <div class="logo logo-width-1 d-block d-lg-none">
-                            <a href="index.html"><img src="assets/imgs/logo/trending_logo.png" alt="logo"></a>
+                            <a href="index.html"><img src="{{asset('assets/imgs/logo/trending_logo.png')}}" alt="logo"></a>
                         </div>
                         <div class="header-nav d-none d-lg-flex">
                             <div class="main-categori-wrap d-none d-lg-block">
@@ -529,7 +529,7 @@
                 <div class="mobile-header-wrapper-inner">
                     <div class="mobile-header-top">
                         <div class="mobile-header-logo">
-                            <a href="index.html"><img src="assets/imgs/logo/trending_logo.png" alt="logo"></a>
+                            <a href="index.html"><img src="{{asset('assets/imgs/logo/trending_logo.png')}}" alt="logo"></a>
                         </div>
                         <div class="mobile-menu-close close-style-wrap close-style-position-inherit">
                             <button class="close-style search-close">
@@ -686,7 +686,7 @@
                             <div class="col-lg-4 col-md-6">
                                 <div class="widget-about font-md mb-md-5 mb-lg-0">
                                     <div class="logo logo-width-1 wow fadeIn animated">
-                                        <a href="index.html"><img src="assets/imgs/logo/trending_logo.png" alt="logo"></a>
+                                        <a href="index.html"><img src="{{asset('assets/imgs/logo/trending_logo.png')}}" alt="logo"></a>
                                     </div>
                                     <h5 class="mt-20 mb-10 fw-600 text-grey-4 wow fadeIn animated">Contact</h5>
                                     <p class="wow fadeIn animated">

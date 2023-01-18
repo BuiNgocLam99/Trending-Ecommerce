@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\ProfileController;
+use App\Http\Livewire\Admin\AdminCategoriesComponent;
 use App\Http\Livewire\Admin\AdminDashboardComponent;
 use App\Http\Livewire\HomeComponent;
 use App\Http\Livewire\ShopComponent;
@@ -35,9 +36,9 @@ Route::get('/product/{slug}', DetailsComponent::class)
 
 Route::get('/cart', CartComponent::class)
     ->name('shop.cart');
-    
+
 Route::get('/wishlist', WishlistComponent::class)
-->name('shop.wishlist');
+    ->name('shop.wishlist');
 
 Route::get('/checkout', CheckoutComponent::class)
     ->name('shop.checkout');
@@ -57,6 +58,8 @@ Route::middleware(['auth'])->group(function () {
 Route::middleware(['auth', 'authadmin'])->group(function () {
     Route::get('/admin/dashboard', AdminDashboardComponent::class)
         ->name('admin.dashboard');
+    Route::get('/admin/categories', AdminCategoriesComponent::class)
+        ->name('admin.categories');
 });
 
 
